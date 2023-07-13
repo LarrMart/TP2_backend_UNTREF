@@ -1,0 +1,4 @@
+node_modules
+.env
+src/consigna.pdf
+src/granjas.json
