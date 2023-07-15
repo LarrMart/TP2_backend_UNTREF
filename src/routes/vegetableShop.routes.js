@@ -1,7 +1,7 @@
 const {Router} = require("express");
 
-const {list, getProductById, getProductByName,  
-	getProductByCategory, add, update, remove
+const {list, getProductById, getProductsByName,  
+	getProductsByCategory, add, update, remove
 } = require("../controllers/vegetableShop.controllers.js");
 
 const router = Router();
@@ -10,9 +10,9 @@ router.get("/verduleria/listado", list);
 
 router.get("/verduleria/codigo/:codigo", getProductById);
 
-router.get("/verduleria/nombre/:nombre", getProductByName);
+router.get("/verduleria/nombre/:nombre", getProductsByName);
 
-router.get("/verduleria/categoria/:categoria", getProductByCategory);
+router.get("/verduleria/categoria/:categoria", getProductsByCategory);
 
 router.post("/verduleria/agregar", add);
 
