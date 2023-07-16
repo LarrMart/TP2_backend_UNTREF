@@ -1,0 +1,8 @@
+root = true #Archivo creado para solucionar (anteriormente eran 8 espacios por tab)
+			#el espaciado excesivo en github
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+indent_style = tab  
+indent_size = 4

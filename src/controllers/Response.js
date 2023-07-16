@@ -5,12 +5,12 @@ function Response(result, status, description) {
 		"description": description
 	}
 }
-
+            
 function responses(str) {
 	let ret = undefined;
 	switch(str) {
  		case "connectionFailed": 
- 			ret = new Response("error", 500,"No fue posible conectarse con la base de datos."); break;
+ 			ret = new Response("error", 500, "No fue posible conectarse con la base de datos."); break;
 
  		case "wrongId": 
  			ret = new Response("error",	400, "El id tiene que ser un número entero positivo."); break;
