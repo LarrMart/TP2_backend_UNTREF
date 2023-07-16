@@ -5,7 +5,9 @@ function Response(result, status, description) {
 		"description": description
 	}
 }
-            
+
+//Muchas de las respuestas se repiten en los métodos controladores.
+//Por eso las encapsulé en esta función.            
 function responses(str) {
 	let ret = undefined;
 	switch(str) {

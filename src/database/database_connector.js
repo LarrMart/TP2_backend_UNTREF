@@ -1,4 +1,3 @@
-require('dotenv').config(); // como inicio las variables de entorno acá ya quedan inicializadas para todo el proyecto.
 const { MongoClient } = require('mongodb');
 const URI             = process.env.MONGODB_URLSTRING;
 const client          = new MongoClient(URI);

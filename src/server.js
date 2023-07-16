@@ -1,3 +1,4 @@
+require('dotenv').config();
 const vegetableShopRoutes = require("./routes/vegetableShop.routes.js");
 const express = require("express");
 const PORT    = process.env.PORT || 3000;
