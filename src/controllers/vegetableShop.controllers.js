@@ -1,6 +1,11 @@
 const db_connector = require("../database/database_connector.js");
 const {responses, Response} = require("./Response.js");
-const {capitalize, hasCorrectKeys, hasCorrectDataType} = require("./utilities.js");
+const {
+	capitalize, 
+	hasCorrectKeys,
+	hasCorrectDataType, 
+	strToAccentRegex
+} = require("./utilities.js");
 
 const list = async (req, res) => {
 	let ret = undefined;
@@ -50,7 +55,7 @@ const getProductsByName = async (req, res) => {
 		const client = await db_connector.connect();
 		const db = client.db("vegetable_shop");
 		const products = await db.collection("products")
-								 .find({"nombre": {$regex: name, $options: "i"}})
+								 .find({"nombre": {$regex: strToAccentRegex(name), $options: "i"}})
 								 .sort({codigo: 1})
 								 .toArray();
 		
