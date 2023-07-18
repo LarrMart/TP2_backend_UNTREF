@@ -67,7 +67,7 @@ Si el nombre indicado se encuentra en la base de datos, se devolverá el product
 También se acepta que se escriba parte de un nombre, en cuyo caso se devolverá los productos que contengan esa parte del texto buscado.
 
 Ejemplo nº1:
-[http://localhost:3008/verduleria/nombre/man](http://localhost:3008/verduleria/nombre/man)  
+> [http://localhost:3008/verduleria/nombre/man](http://localhost:3008/verduleria/nombre/man)  
 
 ```json
 {
@@ -101,14 +101,19 @@ Ejemplo nº1:
 Cabe destacar que la ruta **NO** hace distinción entre mayúsculas y minúsculas, así, por ejemplo, introduciendo la cadena MAN, mAn, y maN se obtendrán los mismos resultados.
 
 > [http://localhost:3008/verduleria/nombre/MAN](http://localhost:3008/verduleria/nombre/MAN)
+
 > [http://localhost:3008/verduleria/nombre/mAn](http://localhost:3008/verduleria/nombre/MAN)
+
 > [http://localhost:3008/verduleria/nombre/maN](http://localhost:3008/verduleria/nombre/MAN)   
 
 Y tampoco distingue entre vocales con tilde o sin ella.
 
 > [http://localhost:3008/verduleria/nombre/lón](http://localhost:3008/verduleria/nombre/lón)
+
 > [http://localhost:3008/verduleria/nombre/lon](http://localhost:3008/verduleria/nombre/lon)
+
 > [http://localhost:3008/verduleria/nombre/ía](http://localhost:3008/verduleria/nombre/ia)
+
 > [http://localhost:3008/verduleria/nombre/ia](http://localhost:3008/verduleria/nombre/ia)
 
 ### _Buscar productos por su código_
@@ -138,7 +143,9 @@ En caso de que el código sea un número no positivo o una cadena
 :
 
 > [http://localhost:3008/verduleria/codigo/-12](http://localhost:3008/verduleria/codigo/-12)
+
 > [http://localhost:3008/verduleria/codigo/0](http://localhost:3008/verduleria/codigo/0)
+
 > [http://localhost:3008/verduleria/codigo/texto](http://localhost:3008/verduleria/codigo/texto)
 
 Se obtiene:
@@ -156,6 +163,7 @@ Se obtiene:
 De forma similar se puede buscar por categoría. Las únicas disponibles son dos: _fruta_ y _verdura_, cualquier otra categoría genera un mensaje de error. Esta debe ser escrita como parámetro en la URL, por ejemplo:
 
 > [http://localhost:3008/verduleria/categoria/fruta](http://localhost:3008/verduleria/categoria/fruta)
+
 > [http://localhost:3008/verduleria/categoria/verdura](http://localhost:3008/verduleria/categoria/verdura)
 
 ```json
@@ -237,6 +245,7 @@ De forma similar se puede buscar por categoría. Las únicas disponibles son dos
 Al igual que con otras rutas no se hace distinción entre mayúsculas y minúsculas.
 
 > [http://localhost:3008/verduleria/categoria/FrUtA](http://localhost:3008/verduleria/categoria/FrUtA)
+
 > [http://localhost:3008/verduleria/categoria/vERdura](http://localhost:3008/verduleria/categoria/vERdura)
 
 Cualquier otro texto que no sea fruta o verdura, genera un mensaje de error. 
