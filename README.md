@@ -1,4 +1,7 @@
-# API RESTFUL 
+# Segundo proyecto integrador API-RESTFUL con MONGODB 
+
+#### Alumno: ***Guillermo Alejandro Larroca Martínez***
+---
 
 - [Introducción](#introducción)
 - [Configuración de la base datos](#configuración-de-la-base-de-datos)
@@ -13,7 +16,7 @@
 
 ## Introducción
 
-**Fake Company S.A** nos solicitó la creación de un sistema de stock para sus múltiples sucursales de venta de frutas y verduras conocidas como: **mandale-fruta.com**. El propósito de este documento es explicar el funcionamiento de dicho sistema.
+Resolución del segundo proyecto integrador del curso de Backend dictado por la UNTREF para el plan Argentina Programa 4.0.
 
 ## Configuración de la base de datos
 
