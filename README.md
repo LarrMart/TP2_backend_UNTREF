@@ -1,4 +1,4 @@
-# Segundo proyecto integrador API-RESTFUL con MONGODB 
+# Segundo proyecto integrador API-RESTful con MONGODB 
 
 #### Alumno: ***Guillermo Alejandro Larroca Martínez***
 ---
